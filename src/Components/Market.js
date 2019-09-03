@@ -10,10 +10,30 @@ const MarketLink = styled.a`
   text-decoration-line: underline;
 `;
 
+const Txt = styled.span`
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #eb4d4b;
+  text-decoration-line: line-through;
+`;
+
 const Market = ({ exchange_name, market_url }) => (
-  <MarketLink href={market_url !== null ? market_url : "/"}>
-    <Container>{exchange_name}</Container>
-  </MarketLink>
+  <div>
+    {market_url !== null ? (
+      <MarketLink href={market_url}>
+        <Container>{exchange_name}</Container>
+      </MarketLink>
+    ) : (
+      <Container>
+        {exchange_name}
+        <Txt>Not allowed</Txt>
+      </Container>
+    )}
+  </div>
+  // <MarketLink href={market_url !== null ? market_url : "/"}>
+  //   <Container>{exchange_name}</Container>
+  // </MarketLink>
 );
 
 Market.propTypes = {
