@@ -4,6 +4,9 @@ import Header from "./Header";
 import Coins from "../Screens/Coins";
 import Exchanges from "../Screens/Exchanges";
 import Prices from "../Screens/Prices";
+import Details from "../Screens/Details";
+import Markets from "../Screens/Markets";
+import CoinExchanges from "../Screens/CoinExchanges";
 
 export default () => {
   return (
@@ -11,7 +14,10 @@ export default () => {
       <Header />
       <Route path="/" exact component={Prices} />
       <Route path="/exchanges" component={Exchanges} />
-      <Route path="/coins" component={Coins} />
+      <Route path="/coins" exact component={Coins} />
+      <Route path="/coins/:id" component={Details} />
+      <Route path="/coins/:id/markets" exact component={Markets} />
+      <Route path="/coins/:id/exchanges" exact component={CoinExchanges} />
     </Router>
   );
 };

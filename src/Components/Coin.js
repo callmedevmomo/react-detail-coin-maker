@@ -1,17 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Container = styled.div``;
+const Container = styled.div`
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+`;
 
 const Ranking = styled.span`
   font-weight: 600;
 `;
 
-const Coin = ({ name, symbol, rank }) => (
-  <Container>
-    <Ranking>#{rank}</Ranking> {name}/{symbol}
-  </Container>
+const Coin = ({ id, name, symbol, rank }) => (
+  <Link to={`/coins/${id}`}>
+    <Container>
+      <Ranking>#{rank}</Ranking> {name}/{symbol} →
+    </Container>
+  </Link>
 );
 
 Coin.propTypes = {
