@@ -23,11 +23,11 @@ const Symbol = styled.span`
   color: #2e86de;
   font-weight: 600;
 `;
-const Nothing = styled.span`
-  font-size: 14px;
-  color: #e84118;
-  font-weight: 600;
-`;
+// const Nothing = styled.span`
+//   font-size: 14px;
+//   color: #e84118;
+//   font-weight: 600;
+// `;
 
 const CoinEx = ({ name, fiats }) => (
   <Container>
