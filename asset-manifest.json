@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/react-detail-coin-maker/static/js/main.23fd7912.chunk.js",
+    "main.js.map": "/react-detail-coin-maker/static/js/main.23fd7912.chunk.js.map",
+    "runtime~main.js": "/react-detail-coin-maker/static/js/runtime~main.17ca7b54.js",
+    "runtime~main.js.map": "/react-detail-coin-maker/static/js/runtime~main.17ca7b54.js.map",
+    "static/js/2.422aef55.chunk.js": "/react-detail-coin-maker/static/js/2.422aef55.chunk.js",
+    "static/js/2.422aef55.chunk.js.map": "/react-detail-coin-maker/static/js/2.422aef55.chunk.js.map",
+    "index.html": "/react-detail-coin-maker/index.html",
+    "precache-manifest.47621bc7cd256043b41a298bbd7ca3e8.js": "/react-detail-coin-maker/precache-manifest.47621bc7cd256043b41a298bbd7ca3e8.js",
+    "service-worker.js": "/react-detail-coin-maker/service-worker.js"
+  }
+}
